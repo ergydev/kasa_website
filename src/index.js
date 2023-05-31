@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './index.css';
-import Home from './pages/home';
+import './style/index.css';
+
+import Navigation from './components/navigation';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <Routes>
-      <Route></Route>
-    </Routes>
-    <Home />
-  </Router>
 
+  <Navigation />
 );
