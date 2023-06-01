@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/banner";
 import Card from "../../components/Card/card";
+import { announces } from '../../data/announces';
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
           <Banner />
         </div>
         <div id="layout_grid--section">
-          <Card />
+          {announces.map((announce) =>(
+            <Card key={announce.id} title={announce.title} />
+          ))}
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/home';
 import About from '../pages/about/about'
 import Error from '../pages/error/error'
-import Logement from '../pages/logement/logement'
+import Logement from '../pages/logement/Logement'
 import Header from './Header/header';
 
 function Navigation() {
