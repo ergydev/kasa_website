@@ -37,6 +37,7 @@ function Slider({ announceId }) {
                 }
 
                 return(
+                    
                     <img 
                         key={pictureIndex}
                         src={picture}
