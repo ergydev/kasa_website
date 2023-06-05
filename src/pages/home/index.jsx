@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/banner";
 import Card from "../../components/Card/card";
+import Footer from "../../components/Footer/Footer"
 import { announces } from '../../data/announces';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Card key={announce.id} title={announce.title} id={announce.id} />
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );

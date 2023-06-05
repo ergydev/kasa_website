@@ -7,7 +7,7 @@ function Footer() {
         <section id='footer'>
             <div className="footer__center">
                 <Link to='/'><img src={logoFooter} alt="Accueil" className='footer__center--logo' /></Link>
-                <p className='footer__center--copyright'>&copy 2020 Kasa. All rigths reserved</p>
+                <p className='footer__center--copyright'>&copy; 2020 Kasa. All rigths reserved</p>
             </div>
         </section>
     )
