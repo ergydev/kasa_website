@@ -14,7 +14,7 @@ function Navigation() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/error' element={<Error />} />
-        <Route path='/logement' element={<Logement />} />
+        <Route path='/logement/:id' element={<Logement />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </Router>
