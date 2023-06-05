@@ -1,9 +1,13 @@
 import './tags.scss'
-import { announces } from '../../data/announces'
+
 
 function Tags({ tags }) {
     return(
-        <div></div>
+        <div className='tags'>
+            {tags.map((tag, index) => (
+                <span key={index} className='tag'>{tag}</span>
+            ))}
+        </div>
     )
 }
 
