@@ -2,11 +2,12 @@ import { useParams } from 'react-router-dom'
 import { announces } from '../../data/announces'
 import Slider from '../../components/Slider/Slider'
 import Collapse from "../../components/Collapse/Collapse"
+import Rating from "../../components/Rating/Rating"
 
-import avatar from '../../assets/circle-avatar.png'
+
 import './logement.scss'
 
-function Logement() {
+function Logement({ rating }) {
     const { id } = useParams()
 
     // use id to find current announce in the data file
@@ -26,8 +27,8 @@ function Logement() {
             <p className='logement__adress'>{currentAnnounce.location}</p>
 
             <div className='logement__info--wrapper'>
-                <div className='logement__tags'></div>
-                <div className='logement__ratings'></div>
+                <div className='logement__tags'>{currentAnnounce.tags}</div>
+                <Rating rating={currentAnnounce.rating} />
             </div>
 
             <section className='logement__description--wrapper'>
