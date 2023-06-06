@@ -1,0 +1,53 @@
+@import '../../style/base.scss';
+
+.collapside__wrapper{
+
+    max-width: 1023px;
+    margin: 10px auto;
+
+
+    .collapside__title{
+        background-color: $primary;
+        color: $secondary;
+        height: 47px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        cursor: pointer;
+
+        display: flex;
+
+        h3{
+            font-size: 24px;
+            padding-left: 18px;
+
+        }
+
+        img{
+            width: 18px;
+            transform: rotate(270deg);
+            position: absolute;
+            left: 96%;
+            right: 0;
+            bottom: 10px;
+        }
+
+        .rotate{
+            transform: rotate(90deg);
+            transition: all ease-in-out 5ms;
+        }
+    }
+
+    .collapside__content{
+        background-color: $gray;
+        max-height: 146px;
+        padding: 36px 27px;
+        display: flex;
+
+        p{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}

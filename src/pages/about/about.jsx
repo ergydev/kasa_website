@@ -12,13 +12,14 @@ function About() {
                 <Banner image={image}/>
             </div>
             <div className="collapse__section">
-                <Collapse title="Fiabilité" />
+                <Collapse title="Fiabilité" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi consequuntur vero, non eos voluptatem dicta sint reprehenderit! Qui, nisi porro veniam libero soluta sapiente expedita reprehenderit? Voluptatibus iure tempore amet?" />
                 <Collapse title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
-                <Collapse title="Service" />
-                <Collapse title="Sécurité" />
+                <Collapse title="Service" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi consequuntur vero, non eos voluptatem dicta sint reprehenderit! Qui, nisi porro veniam libero soluta sapiente expedita reprehenderit? Voluptatibus iure tempore amet?" />
+                <Collapse title="Sécurité" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi consequuntur vero, non eos voluptatem dicta sint reprehenderit! Qui, nisi porro veniam libero soluta sapiente expedita reprehenderit? Voluptatibus iure tempore amet?" />
             </div>
         </div>
     )
 }
 
 export default About
+
