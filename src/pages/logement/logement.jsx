@@ -13,7 +13,7 @@ function Logement({ rating }) {
     // use id to find current announce in the data file
     const currentAnnounce = announces.find((announce) => announce.id === id)
     return(
-        <div className='container'>
+        <div>
             <Slider photos={currentAnnounce.pictures} announceId={currentAnnounce.id} />
 
             <div className='logement__title--wrapper'>

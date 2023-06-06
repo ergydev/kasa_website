@@ -6,7 +6,6 @@ import { announces } from '../../data/announces';
 function App() {
   return (
     <div className="App">
-      <div className="container">
         <div id="banner_section">
           <Banner />
         </div>
@@ -16,7 +15,6 @@ function App() {
           ))}
         </div>
         <Footer />
-      </div>
     </div>
   );
 }
