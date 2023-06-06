@@ -1,0 +1,39 @@
+// Colors
+$primary : #FF6060;
+$secondary : #FFFFFF;
+$gray : #F6F6F6;
+
+
+// FONTS
+@font-face {
+    font-family: 'Montserrat';
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap);
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    h1{
+        font-weight: 500;
+        color: $primary;
+        font-size: 36px;
+    }
+
+    a{
+        color: $primary;
+    }
+
+    p{
+        color: $primary;
+        font-size: 18px;
+        line-height: 25.67px;
+        font-weight: 400;
+    }
+}
+
+// Base Style 
+.container{
+    max-width: 1240px;
+    margin: 40px auto;
+}

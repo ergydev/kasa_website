@@ -1,0 +1,18 @@
+@import '../../style/base.scss';
+
+.tags{
+    display: flex;
+    
+    .tag{
+        background-color: $primary;
+        color: $secondary;
+        font-weight: 500;
+        font-size: 14px;
+
+        padding: 3px 22px 2px;
+        border-radius: 10px;
+
+        margin-right: 10px;
+
+    }
+}

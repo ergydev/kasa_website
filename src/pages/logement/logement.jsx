@@ -3,7 +3,7 @@ import { announces } from '../../data/announces'
 import Slider from '../../components/Slider/Slider'
 import Collapse from "../../components/Collapse/Collapse"
 import Rating from "../../components/Rating/Rating"
-
+import Tags from "../../components/Tags/Tags"
 
 import './logement.scss'
 
@@ -27,7 +27,7 @@ function Logement({ rating }) {
             <p className='logement__adress'>{currentAnnounce.location}</p>
 
             <div className='logement__info--wrapper'>
-                <div className='logement__tags'>{currentAnnounce.tags}</div>
+                <Tags tags={currentAnnounce.tags} />
                 <Rating rating={currentAnnounce.rating} />
             </div>
 

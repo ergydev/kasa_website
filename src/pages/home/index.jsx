@@ -12,7 +12,7 @@ function App() {
         </div>
         <div id="layout_grid--section">
           {announces.map((announce) =>(
-            <Card key={announce.id} title={announce.title} id={announce.id} />
+            <Card key={announce.id} title={announce.title} id={announce.id} cover={announce.cover} />
           ))}
         </div>
         <Footer />
