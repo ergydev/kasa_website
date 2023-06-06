@@ -1,0 +1,29 @@
+@import '../../style/base.scss';
+
+footer{
+    background-color: #000;
+    margin-top: 30px;
+    height: 209px;
+    display: flex;
+
+    .footer__center{
+        max-width: 513px;
+        padding: 60px 20px;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        .footer__center--logo{
+            margin-bottom: 30px;
+            width: 122px;
+        }
+
+        .footer__center--copyright{
+            color: $secondary;
+            font-size: 24px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
