@@ -1,6 +1,5 @@
 import Banner from "../../components/Banner/banner";
 import Card from "../../components/Card/card";
-import Footer from "../../components/Footer/Footer"
 import { announces } from '../../data/announces';
 
 import image from "../../assets/banner-home.png"
@@ -10,7 +9,7 @@ import './home.scss'
 function App() {
   return (
     <div className="App">
-        <div id="banner__section">
+        <div className="banner__section">
           <Banner image={image} title={"Chez vous, partout et ailleurs"}/>
         </div>
         <div id="layout_grid--section">
