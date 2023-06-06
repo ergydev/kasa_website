@@ -18,7 +18,6 @@ function App() {
             <Card key={announce.id} title={announce.title} id={announce.id} cover={announce.cover} />
           ))}
         </div>
-        <Footer />
     </div>
   );
 }

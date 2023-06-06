@@ -5,6 +5,7 @@ import About from '../pages/about/About'
 import Error from '../pages/error/Error'
 import Logement from '../pages/logement/Logement'
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 function Navigation() {
   return (
@@ -17,6 +18,7 @@ function Navigation() {
         <Route path='/logement/:id' element={<Logement />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
