@@ -7,10 +7,13 @@ import Navigation from './components/navigation';
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div className='container'>
-    <Navigation />
+  <div>
+    <div className='container'>
+      <Navigation />
+    </div>
     {/* <Footer /> */}
   </div>
 );

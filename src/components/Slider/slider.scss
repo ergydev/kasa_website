@@ -1,0 +1,55 @@
+@import '../../style/base.scss';
+
+.slider {
+    position: relative;
+    height: 415px;
+
+    .slider__gallery{
+        position: relative;
+        height: 100%;
+        border-radius: 25px;
+
+
+
+        .slide{
+            display: none;
+        }
+
+        .activeSlide{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+
+    }
+
+    .slider__gallery--previous, .slider__gallery--next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 46.68px;
+    }
+
+    .slider__gallery--previous{
+        left: 10px;
+    }
+
+    .slider__gallery--next{
+        right: 10px;
+        transform: rotate(180deg);
+        top: 35%;
+    }
+
+    .slider__counter{
+        color: $secondary;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+}
