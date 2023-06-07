@@ -9,6 +9,16 @@
     height: 340px;
     position: relative;
 
+    @media screen and (max-width: $mobile) {
+        width: 335px;
+        height: 255px;
+    }
+
+    @media screen and (min-width: $tablet) and ( max-width: $desktop) {
+        width: 290px;
+        height: 255px;
+    }
+
 
     
     .card--image{

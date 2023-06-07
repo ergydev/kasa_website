@@ -3,6 +3,12 @@ $primary : #FF6060;
 $secondary : #FFFFFF;
 $gray : #F6F6F6;
 
+// media queries 
+$mobile : 640px;
+$tablet : 768px;
+$desktop: 1024px;
+
+
 
 // FONTS
 @font-face {
@@ -44,4 +50,15 @@ body {
 .container{
     max-width: 1240px;
     margin: 40px auto 0;
+
+    @media screen and (max-width: $mobile ) {
+        max-width: 335px;
+        margin: 20px auto 0;
+    }
+
+    @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+        max-width: 600px;
+        margin: 30px auto 0;
+    }
 }
+

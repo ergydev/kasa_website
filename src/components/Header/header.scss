@@ -8,10 +8,26 @@ header{
         justify-content: space-between;
         align-items: center;
 
+        .header__logo img{
+
+            @media screen and (max-width: $mobile) {
+                width: 145px;
+                height: 47px;
+            }
+        }
+
         ul{
             display: flex;
             justify-content: space-between;
             width: 230px;
+
+            @media screen and (max-width: $mobile ) {
+                width: 140px;
+            }
+
+            @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                width: 215px;
+            }
     
         }
     }
@@ -22,7 +38,24 @@ header{
         .nav__links--link{
             font-size: 24px;
             
+            @media screen and (max-width: $mobile ) {
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+            @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                font-size: 20px;
+                text-transform: uppercase;
+            }
         }
+    }
+
+    @media screen and (max-width: $mobile ) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+        margin-bottom: 32px ;
     }
 }
 

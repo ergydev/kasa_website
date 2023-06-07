@@ -5,6 +5,7 @@
     margin-bottom: 40px;
     
 
+
     .banner{
         height: 100%;
         position: relative;
@@ -24,12 +25,37 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
+            @media screen and (max-width: $mobile) {
+                left: 37%; 
+                max-width: 195px;
+              }
+
+
 
             h1{
                 color: $secondary;
                 font-size: 42px;
+
+                @media screen and (max-width: $mobile) {
+                  font-size: 24px;  
+                }
+
+                @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                    font-size: 36px;  
+                }
                 
             }
         }
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 111px;
+        margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+        height: 200px;
+        margin-bottom: 30px;
     }
 }
