@@ -16,24 +16,29 @@ function Logement({ rating }) {
         <div>
             <Slider photos={currentAnnounce.pictures} announceId={currentAnnounce.id} />
 
-            <div className='logement__title--wrapper'>
-                <h1 className='logment__title'>{currentAnnounce ? currentAnnounce.title : 'Logement'}</h1>
-                <div className='logement__host'>
-                    <p className='logement__host--name'>{currentAnnounce ? currentAnnounce.host.name : 'Nom'}</p>
-                    <img src={currentAnnounce ? currentAnnounce.host.picture : 'Avatar'} alt="Host" className='logement__host--avatar' />
+            <section className="logement__title">
+                <div className='logement__title--wrapper'>
+                    <div className="logement__title--adress">
+                        <h1 className='logment__title'>{currentAnnounce ? currentAnnounce.title : 'Logement'}</h1>
+                        <p className='logement__adress'>{currentAnnounce.location}</p>
+                    </div>
+                    <div className='logement__host'>
+                        <p className='logement__host--name'>{currentAnnounce ? currentAnnounce.host.name : 'Nom'}</p>
+                        <img src={currentAnnounce ? currentAnnounce.host.picture : 'Avatar'} alt="Host" className='logement__host--avatar' />
+                    </div>
                 </div>
-            </div>
 
-            <p className='logement__adress'>{currentAnnounce.location}</p>
 
-            <div className='logement__info--wrapper'>
-                <Tags tags={currentAnnounce.tags} />
-                <Rating rating={currentAnnounce.rating} />
-            </div>
+
+                <div className='logement__info--wrapper'>
+                    <Tags tags={currentAnnounce.tags} />
+                    <Rating rating={currentAnnounce.rating} />
+                </div>
+            </section>
 
             <section className='logement__description--wrapper'>
                 <Collapse title="Description" content={currentAnnounce.description} />
-                <Collapse title="Équipements" content={currentAnnounce.equipments} />
+                <Collapse title="Équipements" content={currentAnnounce.equipments} isList={true} />
             </section>
 
         </div>

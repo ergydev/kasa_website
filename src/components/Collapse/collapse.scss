@@ -42,7 +42,7 @@
 
     .collapside__content{
         background-color: $gray;
-        max-height: 146px;
+        min-height: 146px;
         padding: 36px 27px;
         display: flex;
 
