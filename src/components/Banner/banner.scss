@@ -17,6 +17,10 @@
             object-fit: cover;
             border-radius: 25px;
             filter: brightness(70%);
+
+            @media screen and (max-width: $mobile ) {
+                border-radius: 10px;
+            }
         }
 
         .banner__content{

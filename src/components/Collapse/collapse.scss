@@ -23,6 +23,14 @@
             font-size: 24px;
             padding-left: 18px;
 
+            @media screen and (max-width: $mobile ) {
+                font-size: 13px;
+            }
+        
+            @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                font-size: 18px;
+            }
+
         }
 
         img{
@@ -32,11 +40,31 @@
             left: 96%;
             right: 0;
             bottom: 10px;
+
+            @media screen and (max-width: $mobile ) {
+                width: 16px;
+                height: 12px;
+                left: 94%;
+            }
+        
+            @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                width: 18px;
+                height: 18px;
+                left: 94%;
+            }
         }
 
         .rotate{
             transform: rotate(90deg);
             transition: all ease-in-out 5ms;
+        }
+
+        @media screen and (max-width: $mobile ) {
+            height: 29.93px;
+        }
+    
+        @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+            height: 36px;
         }
     }
 
@@ -49,6 +77,22 @@
         p{
             font-size: 24px;
             font-weight: 400;
+
+            @media screen and (max-width: $mobile ) {
+                font-size: 12px;
+            }
+        
+            @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+                font-size: 16px;
+            }
         }
+    }
+
+    @media screen and (max-width: $mobile ) {
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: $tablet ) and (max-width: $desktop) {
+        max-width: 100%;
     }
 }

@@ -21,17 +21,18 @@ function Logement({ rating }) {
                     <div className="logement__title--adress">
                         <h1 className='logment__title'>{currentAnnounce ? currentAnnounce.title : 'Logement'}</h1>
                         <p className='logement__adress'>{currentAnnounce.location}</p>
+                        <Tags tags={currentAnnounce.tags} />
                     </div>
-                    <div className='logement__host'>
-                        <p className='logement__host--name'>{currentAnnounce ? currentAnnounce.host.name : 'Nom'}</p>
-                        <img src={currentAnnounce ? currentAnnounce.host.picture : 'Avatar'} alt="Host" className='logement__host--avatar' />
-                    </div>
+
                 </div>
 
 
 
                 <div className='logement__info--wrapper'>
-                    <Tags tags={currentAnnounce.tags} />
+                    <div className='logement__host'>
+                        <p className='logement__host--name'>{currentAnnounce ? currentAnnounce.host.name : 'Nom'}</p>
+                        <img src={currentAnnounce ? currentAnnounce.host.picture : 'Avatar'} alt="Host" className='logement__host--avatar' />
+                    </div>
                     <Rating rating={currentAnnounce.rating} />
                 </div>
             </section>
