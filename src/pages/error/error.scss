@@ -13,11 +13,41 @@
             font-weight: 700;
             font-size: 288px;
             margin-bottom: 66px;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 96px;
+                margin-bottom: 11px;
+            }
+        
+            @media screen and (min-width: $tablet) and ( max-width: $desktop) {
+                font-size: 120px;
+                margin-bottom: 30px;
+            }
         }
         .error__text {
             font-weight: 500;
             font-size: 36px;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 18px;
+            }
+        
+            @media screen and (min-width: $tablet) and ( max-width: $desktop) {
+                font-size: 24px;
+            }
         }
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 198px;
+            margin-bottom: 133px;
+
+        }
+    
+        @media screen and (min-width: $tablet) and ( max-width: $desktop) {
+            margin-top: 120px;
+            margin-bottom: 160px;
+        }
+
     }
 
     .error__center--home{
@@ -27,6 +57,17 @@
         .error__link{
             text-decoration: underline;
             font-size: 18px;
+        }
+
+        @media screen and (max-width: $mobile) {
+
+            margin-bottom: 235px;
+
+        }
+    
+        @media screen and (min-width: $tablet) and ( max-width: $desktop) {
+
+            margin-bottom: 180px;
         }
     }
 }
