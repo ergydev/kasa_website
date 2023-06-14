@@ -58,20 +58,26 @@ function Slider({ announceId }) {
         </div>
       )}
 
-      <div className="slider__gallery--previous">
-        <img
-          src={arrow}
-          alt="Previous"
-          onClick={() => setIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length)}
-        />
-      </div>
-      <div className="slider__gallery--next">
-        <img
-          src={arrow}
-          alt="Next"
-          onClick={() => setIndex((prevIndex) => (prevIndex + 1) % pictures.length)}
-        />
-      </div>
+      {pictures.length > 1 && (
+        <div className="slider__gallery--previous">
+          <img
+            src={arrow}
+            alt="Previous"
+            onClick={() => setIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length)}
+          />
+        </div>
+      )}
+
+      {pictures.length > 1 && (
+        <div className="slider__gallery--next">
+          <img
+            src={arrow}
+            alt="Next"
+            onClick={() => setIndex((prevIndex) => (prevIndex + 1) % pictures.length)}
+          />
+        </div>
+      )}
+
     </section>
   );
 }

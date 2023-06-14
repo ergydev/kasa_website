@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from '../pages/home';
 import About from '../pages/about/About'
@@ -8,6 +8,9 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
 function Navigation() {
+
+  // const navigate = useNavigate()
+
   return (
     <Router>
       <Header />
@@ -22,6 +25,7 @@ function Navigation() {
     </Router>
   )
 }
+
 
 export default Navigation
 

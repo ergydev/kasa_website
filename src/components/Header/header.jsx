@@ -15,7 +15,7 @@ function Header() {
                 </Link>
                 <div className='nav__links'>
                     <ul>
-                        <li><Link to='/' exact className={`nav__links--link ${location.pathname === '/' ? 'active' : ""}`}>Accueil</Link></li>
+                        <li><Link to='/'  className={`nav__links--link ${location.pathname === '/' ? 'active' : ""}`}>Accueil</Link></li>
                         <li><Link to='/about' className={`nav__links--link ${location.pathname === '/about' ? 'active' : ""}`}>A Propos</Link></li>                       
                     </ul>
                 </div>
